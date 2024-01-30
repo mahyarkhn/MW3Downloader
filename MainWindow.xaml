@@ -1,0 +1,31 @@
+﻿<Window x:Class="MW3Download.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MW3Download"
+        mc:Ignorable="d"
+        Title="Call of Duty Modern Warfare 3 - Downloader" Height="437" Width="656" Icon="GameWallpapers/wallpaper (3).jpg" ResizeMode="CanMinimize">
+    <Grid Name="gridMain">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="GameWallpapers/wallpaper (5).jpg" Stretch="Fill" AlignmentX="Center" AlignmentY="Top"/>
+        </Grid.Background>
+        
+        <Label Content="CoD: MW3 Downloader" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,35,0,0" FontSize="16"/>
+        <Label Content="By Mahyar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,55,0,0" FontSize="11"/>
+
+        <TextBox Name="txtboxDownloadPath" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="100,-100,0,0" Width="240" MaxWidth="240" MaxLines="1"/>
+        <Button Name="btnExplorePath" Content="'''" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="345,-100,0,0" Height="15" Width="20" Click="btnExplorePath_Click"/>
+        <Label Content="Download Path: " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,-100,0,0"/>
+
+        <CheckBox Name="chckboxFullDownload" Content="Full Download" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Click="chckboxFullDownload_Click"/>
+        <CheckBox Name="chckboxDownloadDlc" Content="Download DLCs" IsChecked="False" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,80,0,0" Click="checkbox_Click"/>
+        <CheckBox Name="chckboxDownloadTeknoMW3" Content="Download TeknoMW3" IsChecked="False" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,120,0,0" Click="checkbox_Click" />
+        <CheckBox Name="chckboxDownloadGame" Content="Download Game" IsChecked="False" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,40,0,0" Click="checkbox_Click"/>
+        
+        <Button Name="btnStart" Content="Start Download" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,15,10" Click="btnStart_Click"/>
+        <Button Name="btnCredits" Content="Credits" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="btnCredits_Click"/>
+
+    </Grid>
+</Window>

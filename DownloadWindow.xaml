@@ -1,0 +1,35 @@
+﻿<Window x:Class="MW3Download.DownloadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MW3Download"
+        mc:Ignorable="d"
+             Title="Call of Duty Modern Warfare 3 - Downloader" Height="490" Width="656" Icon="GameWallpapers/wallpaper (3).jpg" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid Name="griddl">
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Height="350" Width="630">
+            <Grid.Background>
+                <ImageBrush ImageSource="GameWallpapers/wallpaper (3).jpg" AlignmentX="Center" AlignmentY="Top" Stretch="Fill"/>
+            </Grid.Background>
+        </Grid>
+
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,300,0,0" Content="Speed: "/>
+        <Label Name="lblSpeed" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,300,0,0" Content="0 (kb/s)"/>
+
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,300,0,0" Content="Remaning Time: "/>
+        <Label Name="lblTime" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="210,300,0,0" Content="0 Seconds"/>
+
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="320,300,0,0" Content="Elapsed Time: "/>
+        <Label Name="lblElapsed" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="395,300,0,0" Content="0 Seconds"/>
+
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Margin="490,300,0,0" Content="Downloaded: "/>
+        <Label Name="lblDownloaded" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="565,300,0,0" Content="0/0 GB"/>
+
+        <ProgressBar Name="prgbarDownloadPercent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,360,0,0" Height="20" Width="630" Maximum="100" Minimum="0" Value="0"/>
+
+        <Button Name="btnChangeState" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,5,10" Content="Pause" Width="60" Click="btnChangeState_Click"/>
+        <Label Name="lblCurrentDownload" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,0" Content="Waiting..." />
+
+    </Grid>
+</Window>
